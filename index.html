@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  
+    <title></title>
+    <link rel="stylesheet" href="assets/css/style.css" title="" type="text/css" />
+  </head>
+  <body id="body">
+   
+    <audio  id="playmusic" ontimeupdate="update()">
+     <track id="subtitles"  kind="subtitles" label="English subtitles" src="" srclang="en" default />
+   
+    
+    </audio>
+    
+    
+    <div class="bg-img">
+    <div class="container">
+   
+    <div class="mute">
+       <span class="menu" id="menu"><i class=" icon fa fa-bars menu-icon" aria-hidden="true"></i>menu</span>
+       
+   <span id="mute"><i class="material-icons">volume_up</i></span><span> <input type="range" name="volume" id="volume" value="100" min="0" max="100" step="1"/></span>
+    
+     </div>
+    
+    <div id="song_name"></div>
+    <div id="song_artist"></div>
+    <div class="poster_div" >
+      <img id="song_poster" class="images"></div>
+    
+    
+    
+    <br>
+    <div id="caps"><span style="opacity:0;">subs here</span></div>
+    <br>
+   
+  
+    <div class="">
+      <input type="range" name="seek" id="seek" value="0" min="0" step="1"/>
+      <br>
+      <div class="">
+      
+      <div id="sec">00:00</div>
+      <div id="min">00:00</div>
+      <br>
+      <br>
+      </div>
+    </div>
+    <div class="ctrls">
+     <div id="backward">
+       <i class="fa fa-backward" aria-hidden="true"></i>
+     </div>
+    <div id="previous">
+     <i class="icon fas fa-angle-double-left"></i>
+    </div>
+    
+     <div id="playMusicBtn" onclick="togglePlay()"><i class="material-icons play-pause">play_arrow</i></div>
+    
+   
+     <div id="next">
+    <i class="icon fas fa-angle-double-right"></i>
+    </div>
+    <div id="forward">
+      <i class="fa fa-forward" aria-hidden="true"></i>
+    </div>
+    </div>
+    <br>
+    
+       <div class="ctrls">
+     <div class="stop" onclick="stopVideo()">
+      <i class="material-icons stop-icon">stop</i>
+    </div>
+    
+    <div id="shuffle_toggle"><i class="fa fa-random shuffle-icon" aria-hidden="true"></i></div>
+    
+    <div id="up">
+      <i class="fas fa-volume-off volume-down"></i> +
+    </div>
+    <div id="down">
+      <i class="fas fa-volume-off volume-up"></i> -
+    </div>
+    <div id="looping">
+    <i class="fa fa-repeat loop" aria-hidden="true"></i>
+    </div>
+    </div>
+    <br>
+    </div>
+  
+  </div>
+  
+    <div class="menu_display" id="menu_display">
+      
+      <div class="top"><div class="heading">All Songs  (<span id="number_of_songs"></span>)</div>
+     <div id="close"><i  class=" icon fa fa-times" aria-hidden="true"></i></div>
+     </div>
+      <div class="allsongs">
+        
+        <div class="display_all" id="get_songs">
+         
+         
+        </div>
+        
+        <span style="display:none" id="get_id"></span>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="songs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+    
+    
+    <script type="text/javascript" charset="utf-8">
+    var menu_display = document.getElementById('menu_display');
+    var menu = document.getElementById('menu');
+    var close = document.getElementById('close');
+    
+   
+      close.onclick = function(){
+       
+       menu_display.style.visibility = "hidden";
+       menu_display.style.opacity = "0";
+        
+      }
+      menu.onclick = function(){
+       
+       menu_display.style.visibility = "visible";
+       menu_display.style.opacity = "1";
+        
+      }
+    $(document).ready(function (){
+       $('#number_of_songs').html(songs.length);
+    });
+      
+    </script>
+   </body>
+</html>
+
+
