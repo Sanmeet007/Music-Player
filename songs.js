@@ -57,8 +57,8 @@ var songs_playlist =[
   },
   {
     name:   "Attack on Titan" , 
-  poster: "Images/aot5.jpg" , 
-  src :   "Music/aot5.mp3" ,
+  poster: "Images/Aot5.jpg" , 
+  src :   "Music/Aot5.mp3" ,
   subtitles : "subs/" ,
   artist: " Original Soundtrack"
   },
