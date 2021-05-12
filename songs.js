@@ -3,7 +3,7 @@ var songs_playlist =[
   name:   "Havana" , 
   poster: "Images/Havana.jpg" , 
   src :   "Music/havana.mp3" ,
-  subtitles : "Subs/Havana.vtt" ,
+  subtitles : "subs/Havana.vtt" ,
   artist: "Camila Cabello"
   },
   {
