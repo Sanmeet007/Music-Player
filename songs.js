@@ -3,7 +3,7 @@ var songs_playlist =[
   name:   "Havana" , 
   poster: "Images/Havana.jpg" , 
   src :   "Music/havana.mp3" ,
-  subtitles : "Subs/havana.vtt" ,
+  subtitles : "Subs/Havana.vtt" ,
   artist: "Camila Cabello"
   },
   {
@@ -17,7 +17,7 @@ var songs_playlist =[
     name:   "Make Me move" , 
   poster: "Images/makemove.jpg" , 
   src :   "Music/makemove.mp3" ,
-  subtitles : "subs/makemve.vtt" ,
+  subtitles : "subs/MakeMve.vtt" ,
   artist: "Feat. Karra"
   },
   {
@@ -31,7 +31,7 @@ var songs_playlist =[
     name:   "Faded" , 
   poster: "Images/faded.jpg" , 
   src :   "Music/faded.mp3" ,
-  subtitles : "subs/faded.vtt" ,
+  subtitles : "subs/Faded.vtt" ,
   artist: "Alan Walker"
   },
   {
